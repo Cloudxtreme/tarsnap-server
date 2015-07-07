@@ -118,5 +118,11 @@ func (s *Server) UserAgentReceived() (err error) {
 
 func (s *Server) DhSent() (err error) {
 
+	_, err = s.Transport.ReadBytes()
+	if err != nil {
+
+		return
+	}
+
 	return
 }

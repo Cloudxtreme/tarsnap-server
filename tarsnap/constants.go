@@ -2,8 +2,8 @@ package tarsnap
 
 // Default server proto and addr
 const (
-	DefaultProto      = "tcp"
-	DefaultListenAddr = ":9279"
+	DefaultProto = "tcp"
+	DefaultAddr  = ":9279"
 )
 
 // Defaults for validating input
