@@ -20,7 +20,7 @@ var (
 func init() {
 
 	flag.StringVar(&ConfigFile, "f", "", "The configuration file in which the user settings are stored.")
-	flag.BoolVar(&GenConfig, "g", false, "Generate a configuration and print to stdout.")
+	flag.BoolVar(&GenConfig, "genconf", false, "Generate a configuration and print to stdout.")
 	flag.BoolVar(&Verbose, "v", false, "debugging/verbose information")
 	flag.Parse()
 

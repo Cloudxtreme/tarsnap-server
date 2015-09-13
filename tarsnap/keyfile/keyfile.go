@@ -28,7 +28,6 @@ func Read(f string) (data []byte, err error) {
 func Write(f string, data []byte) (err error) {
 
 	block := &pem.Block{
-
 		Type:  "TARSNAP KEY FILE",
 		Bytes: data,
 	}

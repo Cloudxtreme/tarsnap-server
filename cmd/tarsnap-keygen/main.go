@@ -17,16 +17,12 @@ var (
 
 	// Generate the crypto_keys_server.c file for tarsnap.
 	GenSource bool
-
-	// Debug/Verbose switch
-	Verbose bool
 )
 
 func init() {
 	flag.StringVar(&KeyFile, "f", "", "Location of the keyfile to write the generated key to.")
 	flag.BoolVar(&GenKey, "k", false, "Generate a root key and write to specified file.")
 	flag.BoolVar(&GenSource, "s", false, "Generate the crypto_keys_server.c file.")
-	flag.BoolVar(&Verbose, "v", false, "debugging/verbose information")
 	flag.Parse()
 }
 
